@@ -1,4 +1,4 @@
-import { Alert, Button, Label, Spinner, TextInput } from 'flowbite-react';
+import { Alert, Button, Label, Spinner, TextInput } from 'flowbite-react'; // Importing UI components from the flowbite-react library
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -6,7 +6,7 @@ import {
   signInStart,
   signInSuccess,
   signInFailure,
-} from '../redux/user/userSlice';
+} from '../redux/user/userSlice'; // Importing action creators from the userSlice slice
 import OAuth from '../components/OAuth';
 
 export default function SignIn() {
