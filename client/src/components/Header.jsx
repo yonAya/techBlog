@@ -7,7 +7,6 @@ import { toggleTheme } from '../redux/theme/themeSlice';
 import { signoutSuccess } from '../redux/user/userSlice';
 import { useEffect, useState } from 'react';
 
-//test so i can commit
 export default function Header() {
   const path = useLocation().pathname;
   const location = useLocation();
@@ -119,7 +118,7 @@ export default function Header() {
           <Link to='/about'>About</Link>
         </Navbar.Link>
         <Navbar.Link active={path === '/projects'} as={'div'}>
-          <Link to='/projects'>Projects</Link>
+          <Link to='/search'>Posts</Link>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
